@@ -1,237 +1,94 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Dashboard</title>
+    <title>Delicious Cafe</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <aside class="sidebar">
-        <h2>🎓 EduPortal</h2>
-        <p class="menu-title">MAIN MENU</p>
-        <a class="active" href="#home">🏠 Dashboard</a>
-        <a href="#student">👨‍🎓 My Profile</a>
-        <a href="#results">📊 Results</a>
-        <a href="#attendance">📅 Attendance</a>
-        <a href="#subjects">📚 Subjects</a>
-        <a href="#exams">📝 Exams</a>
-        <a href="#announcements">🔔 Notices</a>
-        <div class="sidebar-bottom">✨ Learn. Grow. Succeed.</div>
-    </aside>
+    <header>
+        <h1>Delicious Cafe</h1>
+        <p>Fresh Food, Happy Moments!</p>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#chef">Chef</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-    <main class="main" id="home">
+    <section id="home" class="hero">
+        <h2>Welcome to Delicious Cafe</h2>
+        <p>Enjoy tasty food in a beautiful atmosphere.</p>
+        <a href="#menu" class="btn">View Our Menu</a>
+    </section>
 
-        <header class="topbar">
-            <div>
-                <h1>Student Dashboard 👋</h1>
-                <p>Welcome back! Here is your academic overview.</p>
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-container">
+            <div class="card">
+                <h3>🍕 Pizza</h3>
+                <p>Cheesy and delicious pizza</p>
+                <b>₹199</b>
             </div>
-            <div class="profile-icon">RK</div>
-        </header>
-
-        <section class="welcome">
-            <div>
-                <h2>Hello, Rahul Kumar!</h2>
-                <p>Keep learning and achieve your goals.</p>
-                <p>B.Tech | Computer Science | First Year</p>
+            <div class="card">
+                <h3>🍔 Burger</h3>
+                <p>Fresh vegetable burger</p>
+                <b>₹129</b>
             </div>
-            <div class="welcome-icon">🎓</div>
-        </section>
-
-        <section class="stats">
-            <div class="stat-card purple">
-                <span>📚</span>
-                <p>Total Subjects</p>
-                <h2>6</h2>
+            <div class="card">
+                <h3>☕ Coffee</h3>
+                <p>Hot and refreshing coffee</p>
+                <b>₹79</b>
             </div>
+        </div>
+    </section>
 
-            <div class="stat-card blue">
-                <span>📈</span>
-                <p>Current CGPA</p>
-                <h2>8.5</h2>
-            </div>
+    <section id="chef">
+        <h2>Our Chef</h2>
+        <div class="card">
+            <h3>Chef Rahul</h3>
+            <p>Expert in preparing delicious dishes
+               with fresh ingredients.</p>
+        </div>
+    </section>
 
-            <div class="stat-card green">
-                <span>✅</span>
-                <p>Attendance</p>
-                <h2>85%</h2>
-            </div>
+    <section class="ambience">
+        <h2>Our Restaurant</h2>
+        <p>A peaceful place to enjoy food
+           with family and friends.</p>
+    </section>
 
-            <div class="stat-card orange">
-                <span>🏆</span>
-                <p>Completed Exams</p>
-                <h2>4</h2>
-            </div>
-        </section>
+    <section id="reviews">
+        <h2>Customer Reviews</h2>
+        <div class="card">
+            <p>"Amazing food and friendly service!"</p>
+            <b>- Happy Customer</b>
+        </div>
+    </section>
 
-        <section class="panel" id="student">
-            <h2>👨‍🎓 Student Information</h2>
-            <div class="details">
-                <p><b>Full Name</b><br>Rahul Kumar</p>
-                <p><b>Roll Number</b><br>101</p>
-                <p><b>Branch</b><br>Computer Science</p>
-                <p><b>Semester</b><br>Semester 1</p>
-                <p><b>Email</b><br>rahul@example.com</p>
-                <p><b>College</b><br>My Engineering College</p>
-            </div>
-        </section>
+    <section>
+        <h2>Opening Hours</h2>
+        <p>Monday - Sunday: 9:00 AM - 10:00 PM</p>
+    </section>
 
-        <section class="panel" id="attendance">
-            <h2>📅 Subject Attendance</h2>
+    <section id="contact">
+        <h2>Book a Table</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="date" required>
+            <input type="number" placeholder="Number of Guests"
+                   min="1" required>
+            <button type="submit">Reserve Now</button>
+        </form>
+        <p>Location: Main Road, Andhra Pradesh</p>
+    </section>
 
-            <div class="attendance-item">
-                <div><span>Python Programming</span><b>90%</b></div>
-                <div class="progress"><div class="bar bar1"></div></div>
-            </div>
-
-            <div class="attendance-item">
-                <div><span>Mathematics</span><b>85%</b></div>
-                <div class="progress"><div class="bar bar2"></div></div>
-            </div>
-
-            <div class="attendance-item">
-                <div><span>English</span><b>75%</b></div>
-                <div class="progress"><div class="bar bar3"></div></div>
-            </div>
-
-            <div class="attendance-item">
-                <div><span>Physics</span><b>80%</b></div>
-                <div class="progress"><div class="bar bar4"></div></div>
-            </div>
-        </section>
-
-        <section class="panel" id="results">
-            <h2>📊 Semester Results</h2>
-            <div class="table-wrap">
-                <table>
-                    <tr>
-                        <th>Subject</th>
-                        <th>Marks</th>
-                        <th>Grade</th>
-                        <th>Status</th>
-                    </tr>
-                    <tr>
-                        <td>Python</td>
-                        <td>88</td>
-                        <td>A</td>
-                        <td><span class="badge">Pass</span></td>
-                    </tr>
-                    <tr>
-                        <td>Mathematics</td>
-                        <td>92</td>
-                        <td>A+</td>
-                        <td><span class="badge">Pass</span></td>
-                    </tr>
-                    <tr>
-                        <td>English</td>
-                        <td>80</td>
-                        <td>A</td>
-                        <td><span class="badge">Pass</span></td>
-                    </tr>
-                    <tr>
-                        <td>Physics</td>
-                        <td>76</td>
-                        <td>B+</td>
-                        <td><span class="badge">Pass</span></td>
-                    </tr>
-                </table>
-            </div>
-        </section>
-
-        <section class="panel" id="subjects">
-            <h2>📚 Subject Information</h2>
-            <div class="subject-grid">
-                <div class="subject">
-                    <span>💻</span>
-                    <h3>Python Programming</h3>
-                    <p>Code: CS101</p>
-                    <p>Faculty: Mr. Kumar</p>
-                </div>
-
-                <div class="subject">
-                    <span>➗</span>
-                    <h3>Mathematics</h3>
-                    <p>Code: MA101</p>
-                    <p>Faculty: Mrs. Priya</p>
-                </div>
-
-                <div class="subject">
-                    <span>📖</span>
-                    <h3>English</h3>
-                    <p>Code: EN101</p>
-                    <p>Faculty: Mr. Ravi</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="panel" id="exams">
-            <h2>📝 Examination Schedule</h2>
-            <div class="table-wrap">
-                <table>
-                    <tr>
-                        <th>Date</th>
-                        <th>Subject</th>
-                        <th>Time</th>
-                        <th>Room</th>
-                    </tr>
-                    <tr>
-                        <td>10 Nov 2026</td>
-                        <td>Python</td>
-                        <td>9:00 AM</td>
-                        <td>101</td>
-                    </tr>
-                    <tr>
-                        <td>12 Nov 2026</td>
-                        <td>Mathematics</td>
-                        <td>9:00 AM</td>
-                        <td>102</td>
-                    </tr>
-                    <tr>
-                        <td>14 Nov 2026</td>
-                        <td>English</td>
-                        <td>9:00 AM</td>
-                        <td>103</td>
-                    </tr>
-                </table>
-            </div>
-        </section>
-
-        <section class="panel" id="announcements">
-            <h2>🔔 Latest Announcements</h2>
-            <div class="notice">
-                <span>📢</span>
-                <div>
-                    <h3>Semester Examinations</h3>
-                    <p>Examinations begin on 10 November 2026.</p>
-                </div>
-            </div>
-
-            <div class="notice">
-                <span>📌</span>
-                <div>
-                    <h3>Assignment Submission</h3>
-                    <p>Submit all assignments before the deadline.</p>
-                </div>
-            </div>
-
-            <div class="notice">
-                <span>🎓</span>
-                <div>
-                    <h3>College ID Card</h3>
-                    <p>Carry your college ID card every day.</p>
-                </div>
-            </div>
-        </section>
-
-        <footer>
-            <p>© 2026 EduPortal | Student Dashboard</p>
-            <p>Designed for learning and success 💙</p>
-        </footer>
-
-    </main>
+    <footer>
+        <p>© 2026 Delicious Cafe | All Rights Reserved</p>
+    </footer>
 
 </body>
 </html>
